@@ -1,0 +1,93 @@
+body {
+  box-sizing: border-box;
+  padding: .4rem .32rem;
+}
+
+.herder {
+  box-sizing: border-box;
+  padding: .4rem .32rem;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 2.6667rem;
+  background-color: rgb(36, 36, 36);
+  // position: relative;
+
+  .head {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    font-size: .5867rem;
+
+    a {
+      i {
+        font-size: .5333rem;
+        color: white;
+      }
+    }
+
+    i {
+      font-size: .5333rem;
+      color: white;
+    }
+  }
+
+  p {
+    position: absolute;
+    left: .32rem;
+    bottom: 0;
+    font-size: .4267rem;
+
+    span {
+      color: rgb(238, 15, 15);
+      font-weight: 600;
+      font-size: .5867rem;
+    }
+  }
+}
+
+.content {
+  margin-top: 2.6667rem;
+
+  .item {
+    width: 100%;
+    height: 4rem;
+    // background-color: red;
+    padding: .2667rem .2667rem .2667rem 0;
+    overflow: hidden;
+    display: flex;
+
+    .picture {
+      img {
+        width: 2.6667rem;
+        height: 3.6rem;
+        border-radius: .1867rem;
+      }
+    }
+
+    .describe {
+      margin: .32rem 0 0 .1333rem;
+      overflow: hidden;
+
+      h4 {
+        width: 100%;
+        font-size: .4267rem;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+
+      p {
+        margin: .16rem 0;
+        font-size: .32rem;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: wrap;
+        font-size: .4rem;
+        color: rgb(191, 191, 191);
+
+      }
+    }
+  }
+}

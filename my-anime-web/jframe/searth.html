@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="//at.alicdn.com/t/c/font_4308015_t6n799oq5gj.css">
+  <title>Document</title>
+  <style>
+    body {
+      border: 0;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      padding: .2667rem .2667rem;
+    }
+
+    .header {
+      position: fixed;
+      left: 0;
+      top: 0;
+      box-sizing: border-box;
+      padding: .2667rem .2667rem;
+      height: 1.2rem;
+      /* background-color: red; */
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .header>a {
+      margin-right: 1.3333rem;
+    }
+
+    .header a i {
+      color: white;
+      font-size: .6133rem;
+    }
+
+    .header .searth {
+      flex: 1;
+      position: relative;
+      box-sizing: border-box;
+      /* padding: 0 50px; */
+
+    }
+
+    .header .searth input {
+      box-sizing: border-box;
+      border: 0;
+      margin: 0;
+      padding: 0;
+      padding-left: .8rem;
+      outline: none;
+      width: 100%;
+      font-size: .3733rem;
+      /* color: rgb(231, 229, 229); */
+      color: white;
+      background-color: rgb(40, 40, 40);
+    }
+
+    .header .searth i {
+      position: absolute;
+      left: 0;
+      top: .2933rem;
+      color: rgb(231, 229, 229);
+      font-size: .3733rem;
+    }
+
+    .header span {
+      padding-top: .1333rem;
+      color: white;
+      display: block;
+      margin-left: 1.3333rem;
+      font-size: .5333rem;
+    }
+
+    .content {
+      margin-top: 1.6rem;
+
+
+    }
+
+    .content .head {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .content .head .left {
+      font-size: .3467rem;
+    }
+
+    .content .head .left i {
+      font-size: .4rem;
+    }
+
+    .content .searth-record {
+      padding-top: .4rem;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .content .searth-record p {
+      box-sizing: border-box;
+      padding: .2667rem;
+      width: 25%;
+      font-size: .3467rem;
+      /* color: rgb(231, 229, 229); */
+      color: white;
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <a href="../index.html"><i class="iconfont icon-zuojiantou2"></i></a>
+    <div class="searth">
+      <input type="text" value="请输入关键字或房间号">
+      <i class="iconfont icon-sousuo"></i>
+    </div>
+    <span>搜索</span>
+  </div>
+  <div class="content">
+    <div class="head">
+      <div class="left">
+        <i class="iconfont icon-lishixiao"></i>
+        搜索历史
+      </div>
+
+      <i class="iconfont icon-shanchu"></i>
+    </div>
+    <div class="searth-record">
+      <p>我独自升级</p>
+      <p>我推的孩子</p>
+      <p>进击的巨人</p>
+      <p>异世界</p>
+      <p>后宫</p>
+      <p>我独自升级</p>
+      <p>我推的孩子</p>
+      <p>进击的巨人</p>
+      <p>异世界</p>
+      <p>后宫</p>
+      <p>我独自升级</p>
+      <p>我推的孩子</p>
+      <p>进击的巨人</p>
+      <p>异世界</p>
+      <p>后宫</p>
+    </div>
+  </div>
+  <script src="../js/index.min.js"></script>
+  <script>
+    let shangchu = document.querySelector(`.content .head .icon-shanchu`)
+    let searthrecord = document.querySelector(`.content .searth-record`)
+    let searth = document.querySelector(`.header>span`)
+    shangchu.addEventListener(`click`, function (e) {
+      alert(`你确定要删除浏览记录吗？`)
+      searthrecord.innerHTML = ""
+    })
+    searth.addEventListener(`click`, function (e) {
+      alert(`该功能暂未开放`)
+
+    })
+  </script>
+</body>
+
+</html>

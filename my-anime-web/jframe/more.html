@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="//at.alicdn.com/t/c/font_4308015_aqtzx73mj9c.css">
+  <title>Document</title>
+  <style>
+    body {
+      text-align: center;
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 100vh;
+    }
+
+    i {
+      position: fixed;
+      left: 10px;
+      top: 10px;
+      color: white;
+      font-size: 30px !important;
+      line-height: normal;
+    }
+  </style>
+</head>
+
+<body>
+  <i class="iconfont icon-zuojiantou2"></i>
+  该功能暂未开放
+  <script>
+    let i = document.querySelector(`.icon-zuojiantou2`)
+    i.addEventListener(`click`, function () {
+      location.href = `../index.html`
+    })
+  </script>
+</body>
+
+</html>
